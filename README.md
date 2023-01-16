@@ -13,8 +13,6 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
   - [What I learned](#what-i-learned)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -25,6 +23,7 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 
 ### Screenshot
+![Screenshot](https://user-images.githubusercontent.com/121173949/212694776-386ac627-edf9-4c3f-8b57-2875eae7e92f.png)
 
 
 ### Links
