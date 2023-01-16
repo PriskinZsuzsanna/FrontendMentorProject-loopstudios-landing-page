@@ -1,0 +1,424 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --dark-gray: hsl(0, 0%, 55%);
+    --very-dark-dray: hsl(0, 0%, 41%)
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Alata', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/*---------------------------------------------------------------*/
+body {
+    width: 100%;
+    font-size: 1rem;
+}
+
+.hero {
+    width: 100%;
+    background: url(images/mobile/image-hero.jpg) no-repeat center/cover;
+}
+
+nav {
+    width: 100%;
+    background: transparent;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+}
+
+nav .hamburger {
+    cursor: pointer;
+}
+nav .closed {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;   
+}
+
+nav .open-from-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background:hsl(302, 53%, 46%);
+    transition: all .5s ease-in-out;
+}
+
+nav .open-from-top li {
+    margin-right: 0;
+    text-align: center;
+}
+
+nav .closed .close {
+    position: fixed;
+    top: -100%;
+    right: 20px;
+}
+
+.close {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.container {
+    padding-inline: 5%;
+}
+
+.motto {
+    padding-block: 50px 150px;
+}
+
+.motto h1 {
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 42px;
+    font-weight: 300;
+    border: 3px solid var(--white);
+    padding: 20px;
+}
+
+/*----------------------------------------*/
+
+.section {
+    padding-block: 50px;
+}
+
+.solo-img-div img {
+    width: 100%;
+}
+
+.main-text{
+    text-align: center;
+}
+
+h2 {
+    padding-block: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p {
+    font-weight: 400;
+    color: var(--black);
+}
+
+/*-----------------------------------------------------*/
+
+.gallery div {
+    padding-block: 35px 1px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.gallery-div-text h2 {
+    padding-left: 20px;
+    padding-block: 0;
+    font-weight: 300;
+    text-align: left;
+}
+
+#gallery-1 {
+    background: url(images/mobile/image-deep-earth.jpg) no-repeat center/cover;
+}
+#gallery-2 {
+    background: url(images/mobile/image-night-arcade.jpg) no-repeat center/cover;
+}
+#gallery-3 {
+    background: url(images/mobile/image-soccer-team.jpg) no-repeat center/cover;
+}
+#gallery-4 {
+    background: url(images/mobile/image-grid.jpg) no-repeat center/cover;
+}
+#gallery-5 {
+    background: url(images/mobile/image-from-above.jpg) no-repeat center/cover;
+}
+#gallery-6 {
+    background: url(images/mobile/image-pocket-borealis.jpg) no-repeat center/cover;
+}
+#gallery-7 {
+    background: url(images/mobile/image-curiosity.jpg) no-repeat center/cover;
+}
+#gallery-8 {
+    background: url(images/mobile/image-fisheye.jpg) no-repeat center/cover;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-family: 'Alata', sans-serif;
+    text-transform: uppercase;
+    padding: 6px 36px;
+    background: none;
+    border: 1px solid var(--dark-gray);
+    letter-spacing: 1.2px;
+}
+
+.btn-desktop {
+    display: none;
+}
+
+/*----------------------------------------------------------------*/
+
+.footer {
+    width: 100%;
+    background: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding-block: 30px;
+}
+
+ul {
+    list-style: none;
+    padding-block: 20px;
+    max-width: 120px;
+    margin-inline: auto;
+}
+
+li {
+    padding-block: 10px;
+    cursor: pointer;
+}
+
+
+.social {
+    padding-top: 20px 10px;
+    height: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    max-width: 150px;
+    margin-inline: auto;
+}
+
+.social img {
+    width: 20px;
+    height: 20px;
+}
+
+.copy p{
+    padding-block: 20px 50px;
+    color: var(--dark-gray);
+    z-index: 10;
+}
+
+
+footer {
+    background:hsl(302, 53%, 46%);
+    color: var(--white);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    letter-spacing: 1.4px;
+    font-weight: bold;
+}
+
+.attribution a {
+    color: var(--black);
+    text-decoration: none;
+
+}
+
+/*----------JS-------------*/
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+
+/*------------------------MEDIA Q----------------------------------------------------*/
+
+@media screen and (min-width: 900px){
+
+    body {
+        font-size: 1.5rem;
+    }
+
+    .hero {
+        background: url(images/desktop/image-hero.jpg) no-repeat center/cover;
+    }
+
+    nav .hamburger {
+        display: none;
+    }
+
+    nav .closed {
+        position: relative;
+    }
+
+    nav .closed ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav .closed ul li {
+        margin-left: 20px;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+    nav .closed .close {
+        display: none;
+    }
+
+    .motto {
+        max-width: 45%;
+    }
+
+    .solo-img-div {
+        width: 66%;
+    }
+
+    .section-1 {
+        padding-bottom: 0;
+        position: relative;
+    }
+    
+    .main-text {
+        width: 50%;
+        background: var(--white);
+        padding: 30px 60px;
+        text-align: left;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    h2 {
+        text-align: left;
+    }
+
+    .section-2 {
+        padding-top: 80px;
+    }
+    
+    .btn-mobile {
+        display: none;
+    }
+
+    .btn-desktop {
+        display: block;
+    }
+
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    #gallery-1 {
+        background: url(images/desktop/image-deep-earth.jpg) no-repeat center/cover;
+    }
+    #gallery-2 {
+        background: url(images/desktop/image-night-arcade.jpg) no-repeat center/cover;
+    }
+    #gallery-3 {
+        background: url(images/desktop/image-soccer-team.jpg) no-repeat center/cover;
+    }
+    #gallery-4 {
+        background: url(images/desktop/image-grid.jpg) no-repeat center/cover;
+    }
+    #gallery-5 {
+        background: url(images/desktop/image-from-above.jpg) no-repeat center/cover;
+    }
+    #gallery-6 {
+        background: url(images/desktop/image-pocket-borealis.jpg) no-repeat center/cover;
+    }
+    #gallery-7 {
+        background: url(images/desktop/image-curiosity.jpg) no-repeat center/cover;
+    }
+    #gallery-8 {
+        background: url(images/desktop/image-fisheye.jpg) no-repeat center/cover;
+    }
+
+    .gallery div {
+        padding-block: 180px 20px;
+        margin-top: 30px;
+    }
+
+    .gallery-div-text {
+        width: 270px;
+    }
+
+    .footer {
+        font-size: 1rem;
+    }
+
+    .footer-menus {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 5%;
+        padding-bottom: 30px;
+    }
+
+    .footer-menu-icons ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-inline: 0;
+        padding-block: 0;
+    }
+
+    .footer-menu-icons ul li {
+        margin-right: 10px;
+        font-size: 1rem;
+        padding-block: 0;
+    }
+
+    .copy p {
+        padding-block: 0;
+    }
+
+    .flex-left,
+    .flex-right {
+        padding-block: 10px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .flex-right {
+        align-items: flex-end;
+    }
+
+    .flex-right .social{
+        margin-inline: 0;
+        text-align: right;
+    }
+}
