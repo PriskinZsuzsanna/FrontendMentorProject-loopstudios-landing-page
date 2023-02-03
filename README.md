@@ -27,6 +27,8 @@ Users should be able to:
 
 
 ### Links
+https://priskinzsuzsanna.github.io/FrontendMentorProject-loopstudios-landing-page/
+
 
 ## My process
 
